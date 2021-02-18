@@ -722,4 +722,4 @@ enrollfuture.plot(ax=ax)
 ```
 
 
-![heat](./docs/forecast.png)
+![forecast](./docs/forecast.png)
