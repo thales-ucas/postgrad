@@ -220,7 +220,7 @@ df.plot()
 - 在统计学上，自相关被定义为，两个随机过程中不同时刻的数值之间的皮尔森相关(Pearson correlation).
 
 
-$R(s, t) = \frac{\Epsilon\left[\left(X_s-\mu_s\right)\left(X_t-\mu_t\right)\right]}{\sigma_s\sigma_t}$
+$R(s, t) = \frac{E\left[\left(X_s-\mu_s\right)\left(X_t-\mu_t\right)\right]}{\sigma_s\sigma_t}$
 
 
 - 如果X为广义平稳过程，则$x_t$的期望$\mu_t$以及标准差$\sigma_t$不随时间t变化，则自相关函数可以表示为时间延迟$\tau$的函数，如下
