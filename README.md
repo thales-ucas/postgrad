@@ -226,7 +226,7 @@ $R(s, t) = \frac{\Epsilon\left[\left(X_s-\mu_s\right)\left(X_t-\mu_t\right)\righ
 - 如果X为广义平稳过程，则$x_t$的期望$\mu_t$以及标准差$\sigma_t$不随时间t变化，则自相关函数可以表示为时间延迟$\tau$的函数，如下
 
 
-$R(\tau) = \frac{{\Epsilon}[(X_t-\mu)(X_{t+\tau}-\mu)]}{\sigma^2}$
+$R(\tau) = \frac{E[(X_t-\mu)(X_{t+\tau}-\mu)]}{\sigma^2}$
 
 
 - 信号处理
@@ -235,7 +235,7 @@ $R(\tau) = \frac{{\Epsilon}[(X_t-\mu)(X_{t+\tau}-\mu)]}{\sigma^2}$
 $R_f(\tau) = f(\tau) \times f^*(-\tau) = \int_{-\infty}^{\infty}f(t+\tau)f^*(t)\,dt = \int_{-\infty}^{\infty}f(t)f^*(t - \tau)\,dt$
 
 
-其中“*”是卷积算符，$(\cdot)^*$为取共轭。
+其中“$*$”是卷积算符，$(\cdot)^*$为取共轭。
 
 
 同一时间函数在瞬时t和t+a的两个值相乘积的平均值作为延迟时间t的函数，它是信号与延迟后信号之间相似性的度量。延迟时间为零时，则成为信号的均方值，此时它的值最大。
