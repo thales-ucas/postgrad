@@ -7,7 +7,7 @@
 区别于**回归**，时间序列必须以时间为索引
 
 
-因为时间为索引，就拥有了好多专门以时间为基准的各种方式
+因为时间为索引，就拥有了好多专门以时间为基准的各种处理方式
 
 
 # 研究生报名时间序列分析
@@ -16,10 +16,13 @@
 我们从研招网上找点现成的数据测试一下
 
 
+研招网: https://yz.chsi.com.cn/
+
+
 *基本上各种数据都可以按照这个格式*
 
 
-## 数据
+# 数据
 
 
 ## 收集数据
@@ -52,7 +55,13 @@
 现在只用《数据模型分析》的知识就可以看见我们的数据结构
 
 
+纯用xls就可以作图以及回归
+
+
 ![format](./docs/chart-dmd.png)
+
+
+> 2019年数据和2020年数据我也补上了，但是2020年的数据只能是猜测，因为2021年中才能有官方数据
 
 
 # 为什么要做时间序列分析
@@ -79,11 +88,17 @@
 现在开始时间序列分析
 
 
-gitee: https://gitee.com/thales-ucas/postgrad.git
+本程序源码
 
 
 github: https://github.com/thales-ucas/postgrad.git
 
+
+gitee: https://gitee.com/thales-ucas/postgrad.git
+
+
+jupyter: https://gitee.com/thales-ucas/postgrad/blob/main/ts.ipynb
+> 如果手机观看，请改成电脑格式
 
 # 准备
 
@@ -128,7 +143,7 @@ df = pd.read_excel('./postgrad.xlsx', index_col='年份') # 读取数据，并�
 ```
 
 
-参数df里面讲会是下面的数据
+参数df里面将会是下面的数据
 
 
 ```
@@ -183,7 +198,7 @@ df.plot()
 ![pands.plot](./docs/plot.png)
 
 
-所以说，数据几乎不用处理
+*所以说，数据几乎不用处理*
 
 
 # 自相关
@@ -671,7 +686,7 @@ def thermodynamicOrder(df, ar=4, ma=2):
 ![heat](./docs/heat-sgin.png)
 
 
-可以得到p=3，q=0 效果最好
+> 可以得到p=3，q=0 效果最好
 
 
 ## 录取人数热力图
@@ -680,7 +695,7 @@ def thermodynamicOrder(df, ar=4, ma=2):
 ![heat](./docs/heat-enroll.png)
 
 
-可以得到p=2，q=0 效果最好
+> 可以得到p=2，q=0 效果最好
 
 
 # 模型预测
@@ -723,3 +738,24 @@ enrollfuture.plot(ax=ax)
 
 
 ![forecast](./docs/forecast.png)
+
+
+我们看看未来的数据怎样把~
+
+
+时间    |  报名预测
+--- |   ---
+2021年  |   386.760535
+2022年	|   425.996818
+2023年	|   458.785991
+2024年	|   485.769711
+
+
+
+时间    |  录取预测
+--- |   ---
+2020年  |	69.985935
+2021年	|   76.769525
+2022年	|   81.898363
+2023年	|   83.108294
+2024年	|   84.263803
