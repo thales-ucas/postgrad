@@ -234,7 +234,7 @@ df.plot()
 <img src="https://latex.codecogs.com/gif.latex?R_f(\tau)=f(\tau)*f^*(-\tau)=\int_{-\infty}^{\infty}f(t+\tau)f^*(t)\,dt = \int_{-\infty}^{\infty}f(t)f^*(t - \tau)\,dt" />
 
 
-其中“\*”是卷积算符，(.)^\*^为取共轭。
+其中“\*”是卷积算符，(&middot;)<sup>\*</sup>为取共轭。
 
 
 同一时间函数在瞬时t和t+a的两个值相乘积的平均值作为延迟时间t的函数，它是信号与延迟后信号之间相似性的度量。延迟时间为零时，则成为信号的均方值，此时它的值最大。
