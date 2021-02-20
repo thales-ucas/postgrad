@@ -231,7 +231,7 @@ df.plot()
 - 信号处理
 
 
-<img src="https://latex.codecogs.com/gif.latex?R_f(\tau)=f(\tau)*f^*(-\tau)=\int_{-\infty}^{\infty}f(t+\tau)f^*(t)\,dt=\int_{-\infty}^{\infty}f(t)f^*(t - \tau)\,dt" />
+<img src="https://latex.codecogs.com/gif.latex?R_f(\tau)=f(\tau)*f^*(-\tau)=\int_{-\infty}^{\infty}f(t+\tau)f^*(t)\,dt=\int_{-\infty}^{\infty}f(t)f^*(t-\tau)\,dt" />
 
 
 其中“\*”是卷积算符，(&middot;)<sup>\*</sup>为取共轭。
