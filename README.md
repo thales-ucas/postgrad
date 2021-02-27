@@ -710,6 +710,14 @@ def thermodynamicOrder(df, ar=4, ma=2):
 ## 报名人数热力图
 
 
+使用原始数据查看热力图
+
+
+```py
+thermodynamicOrder(df['报名人数（万人）'], 4, 2)
+```
+
+
 ![heat](./docs/heat-sgin.png)
 
 
@@ -717,6 +725,14 @@ def thermodynamicOrder(df, ar=4, ma=2):
 
 
 ## 录取人数热力图
+
+
+使用一阶差分查看热力图
+
+
+```py
+thermodynamicOrder(enrolldiff['一阶差分'], 4, 2)
+```
 
 
 ![heat](./docs/heat-enroll.png)
